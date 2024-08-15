@@ -1,5 +1,6 @@
 import { Sidebar } from "./Sidebar.js";
 import { PlayerList } from "./PlayerList.js";
+import { MarkerList } from "./MarkerList.js";
 import { WorldList } from "./WorldList.js";
 import { UICoordinates } from "./UICoordinates.js";
 import { UILink } from "./UILink.js";
@@ -43,6 +44,8 @@ class SquaremapMap {
     tick() {
         // tick player tracker
         this.playerList.tick();
+        // tick markers list
+        this.markerList.tick();
         // tick world
         this.worldList.curWorld.tick();
     }
@@ -52,8 +55,9 @@ class SquaremapMap {
 
             this.title = json.ui.title;
             this.sidebar = new Sidebar(json.ui.sidebar);
-            this.playerList = new PlayerList(json.ui.sidebar);
             this.worldList = new WorldList(json.worlds);
+            this.playerList = new PlayerList(json.ui.sidebar);
+            this.markerList = new MarkerList(json.ui.sidebar);
             this.coordinates = new UICoordinates(json.ui.coordinates);
             this.uiLink = new UILink(json.ui.link);
 

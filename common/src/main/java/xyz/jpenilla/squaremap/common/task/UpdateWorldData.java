@@ -91,6 +91,7 @@ public final class UpdateWorldData implements Runnable {
         sidebar.put("pinned", Config.UI_SIDEBAR_PINNED);
         sidebar.put("player_list_label", Messages.UI_SIDEBAR_PLAYER_LIST_LABEL);
         sidebar.put("world_list_label", Messages.UI_SIDEBAR_WORLD_LIST_LABEL);
+        sidebar.put("marker_list_label", Messages.UI_SIDEBAR_MARKER_LIST_LABEL);
         ui.put("sidebar", sidebar);
 
         final Map<String, Object> map = new HashMap<>();

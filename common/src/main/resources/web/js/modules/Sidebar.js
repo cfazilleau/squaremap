@@ -24,6 +24,9 @@ class Sidebar {
             .replace(/{max}/g, 0));
         this.sidebar.appendChild(this.players.element);
 
+        this.markers = new Fieldset("markers", json.marker_list_label);
+        this.sidebar.appendChild(this.markers.element);
+
         this.sidebar.onmouseleave = () => {
             if (!this.pin.pinned) {
                 this.show(false);

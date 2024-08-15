@@ -206,6 +206,8 @@ public final class Messages {
     public static String UI_SIDEBAR_PLAYER_LIST_LABEL = "Players ({cur}/{max})";
     @MessageKey("ui.sidebar.world-list")
     public static String UI_SIDEBAR_WORLD_LIST_LABEL = "Worlds";
+    @MessageKey("ui.sidebar.marker-list")
+    public static String UI_SIDEBAR_MARKER_LIST_LABEL = "Markers";
     @MessageKey("ui.layers.player-tracker")
     public static String UI_PLAYER_TRACKER_LABEL = "Players";
     @MessageKey("ui.layers.world-spawn")
